@@ -9,11 +9,19 @@ import UIKit
 
 class ForYouViewController: UIViewController {
 
+    //MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setupView()
     }
-
-
+    
+    // MARK: - Settings
+    
+    func setupView() {
+        view.backgroundColor = .systemBackground
+        title = Strings.forYouTitle
+    }
 }
 
