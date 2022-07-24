@@ -94,8 +94,8 @@
 		02EAC5D4288D5EB30069E30B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				02EAC5BF288D59FC0069E30B /* ForYouViewController.swift */,
 				02EAC5D5288D5F010069E30B /* LibraryViewController.swift */,
+				02EAC5BF288D59FC0069E30B /* ForYouViewController.swift */,
 				02EAC5D7288D5F390069E30B /* AlbumsViewController.swift */,
 				02EAC5D9288D5F480069E30B /* SearchViewController.swift */,
 			);
