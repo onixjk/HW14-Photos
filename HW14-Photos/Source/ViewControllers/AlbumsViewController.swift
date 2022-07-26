@@ -8,13 +8,23 @@
 import UIKit
 
 class AlbumsViewController: UIViewController {
-
+    
+    // MARK: - Views
+    
+    lazy var addButton: UIBarButtonItem = {
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add,
+                                    target: self,
+                                     action: #selector(addButtonAction))
+        return addButton
+    }()
+    
     //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
+        setupNavigationBar()
     }
     
     // MARK: - Settings
@@ -22,5 +32,15 @@ class AlbumsViewController: UIViewController {
     func setupView() {
         view.backgroundColor = .systemBackground
         title = Strings.albumTitle
+    }
+    
+    private func setupNavigationBar() {
+        navigationItem.leftBarButtonItems = [addButton]
+    }
+    
+    // MARK: - Actions
+    
+    @objc func addButtonAction(_ sender: UIBarButtonItem) {
+        print("tap")
     }
 }
