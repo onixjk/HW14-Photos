@@ -13,8 +13,8 @@ class AlbumsViewController: UIViewController {
     
     lazy var addButton: UIBarButtonItem = {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add,
-                                    target: self,
-                                     action: #selector(addButtonAction))
+                                        target: self,
+                                        action: #selector(addButtonAction))
         return addButton
     }()
     
